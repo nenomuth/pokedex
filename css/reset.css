@@ -1,0 +1,12 @@
+/* Reset margins and paddings */
+*{
+    font-family: 'Bungee', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Removing style list */
+ul{
+ list-style: none;
+}

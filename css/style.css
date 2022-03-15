@@ -1,0 +1,134 @@
+/* alterar a fonte do projeto com o google fonts */
+/* GLOBAL SETTINGS */
+body{
+    font-family: 'Bungee', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e7e7;
+}
+.pokedex{
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+/* ENDING GLOBAL SETTINGS */
+
+/* POKEMON CARD */
+.pokemon-card{
+    display: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+.pokemon-card .pokemon-cards-top{
+    padding: 30px 40px 0;
+}
+.pokemon-card .pokemon-name{
+    margin-bottom: 5px;
+}
+.pokemon-card .pokemon-type{
+    font-size: 12px;
+    background-color: #FFFFFF;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 2px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.pokemon-card .pokemon-details{
+    color:#FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pokemon-card .pokemon-card-image{
+    width: 350px;
+    height: 350px;
+}
+.pokemon-card img{
+    max-width: 100%;
+}
+.pokemon-card .cards-informations{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    padding: 80px 30px 50px;
+    margin-top: -70px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.pokemon-card .cards-informations h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #6B727A;
+}
+.pokemon-card .cards-informations .stats, .pokemon-card .cards-informations .pokemon-skills{
+    padding: 0 10px;
+    width: 180px;
+}
+.pokemon-card .cards-informations .pokemon-skills ul li, .pokemon-card .cards-informations .stats ul li{
+    border-bottom: 1px solid #C3C4C5;
+    padding: 0 0 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.pokemon-cards .open{
+    /* adicionar o aberto no pikachu */
+    display: block;
+}
+.type-fire{
+    background-color: #db703e;
+}
+.type-eletric{
+    background-color: #eebd1d ;
+}
+.type-water{
+    background-color: #76befe;
+}
+.type-grass{
+    background-color: #4cdb70;
+}
+.type-darkness{
+    background-color: #ba68c8;
+}
+.type-dragon{
+    background-color: #e09c4d;
+}
+/* ENDING POKEMON CARDS */
+
+/* LISTA NAV */
+ /* adicionar o ativo no pikachu */
+.list-menu{
+    max-width: 200px;
+}
+.list-menu .pokemon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #6b727a;
+    color: #FFFFFF;
+    padding: 0 5px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-height: 70px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.15s ease-in-out;
+}
+.list-menu .pokemon img{
+    width: 25%;
+    border-radius: 50%;
+}
+.list-menu .pokemon:hover{
+    transform: scale(1.05);
+}
+.list-menu .pokemon span{
+    padding-right: 20px;
+}
+.list-menu .active-pokemon{
+    background-color: #fa6668;
+}
